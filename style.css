@@ -1,0 +1,134 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: gainsboro;
+
+}
+
+.grid-container{
+  margin-left:40vh;
+  margin-right:40vh;
+  display: grid;
+  grid-template-areas: 
+  "Navbar  Main Aside"
+  "Footer Footer Footer";
+}
+
+.left-side{
+  grid-area: Navbar;
+  
+}
+
+.aside-item{
+
+  
+}
+.aside-item a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+
+}
+
+.aside-item :hover{
+  background-color: lightsteelblue;
+  transition: 0.5s;
+}
+
+.main{
+  grid-area: Main;
+}
+
+.main-item{
+  width: 25vw;
+  height: 45vh;
+  border:3px solid grey;
+  border-radius: 7px;
+  background-color:white;
+  margin:1vh 3vh 3vh 3vh;
+  padding: 3vh;
+  text-align:justify;
+  word-spacing: normal;
+}
+
+
+.main-item ::selection{
+  color: lightgreen;
+  background-color: lightslategray;
+}
+
+
+.main-item p{
+  font-size: 15px;
+  margin-bottom:0;
+  padding:0px;
+
+}
+
+.main-header{
+  padding-bottom: 1vh;
+  margin:0;
+  border-bottom: 3px solid gainsboro;
+}
+.space-between{
+  margin-top:2vh;
+  padding: 1vh;
+  display: flex;
+  justify-content: space-between;
+  border-top: 3px solid gainsboro;
+}
+
+.space-between a{
+  text-decoration: none;
+  color: steelblue;
+  padding: 0.5vh 1vh;
+  transition: 0.5s;
+}
+
+.space-between a:hover{
+  background-color: gainsboro;
+}
+
+
+.cat{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+.container{
+
+  display:block;
+
+}
+
+.item{
+  background-color: white;
+  border-radius: 7px;
+  padding: 1vh;
+  margin:1vh;
+  width: 10vw;
+  heigth:10vh;
+
+}
+footer{
+  margin: 0;
+  padding: 0.2vh;
+  grid-area:Footer;
+  text-align: center;
+  color: gainsboro;
+  background-color: white;
+}
+
+
+.logo{
+  background-color: rgb(17, 70, 148);
+}
+.logo img{
+  margin-left: 20vw;
+  margin-top: 0.3vw;
+  padding:0.3vw;
+}
+
