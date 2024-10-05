@@ -1,134 +1,161 @@
-
-body{
-  margin: 0;
-  padding: 0;
-  background-color: gainsboro;
-
+html
+ {
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+    font-size: 13px;
 }
 
-.grid-container{
-  margin-left:40vh;
-  margin-right:40vh;
-  display: grid;
-  grid-template-areas: 
-  "Navbar  Main Aside"
-  "Footer Footer Footer";
+#web {
+    padding-left: 15%;
+    margin-top: 7px;
 }
 
-.left-side{
-  grid-area: Navbar;
-  
+#cat {
+    max-width: 100%;
 }
 
-.aside-item{
-
-  
-}
-.aside-item a {
-  text-decoration: none;
-  padding: 10px;
-  font-size: 15px;
-
+header {
+    top: 0;
+    background-color: #507299;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
 }
 
-.aside-item :hover{
-  background-color: lightsteelblue;
-  transition: 0.5s;
+nav {
+    top: 40px;
+    bottom: 0;
+    padding: 13px 40px 0 40px;
 }
 
-.main{
-  grid-area: Main;
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0px;
+    list-style: none;
 }
 
-.main-item{
-  width: 25vw;
-  height: 45vh;
-  border:3px solid grey;
-  border-radius: 7px;
-  background-color:white;
-  margin:1vh 3vh 3vh 3vh;
-  padding: 3vh;
-  text-align:justify;
-  word-spacing: normal;
+li {
+    padding: 5px;
 }
 
-
-.main-item ::selection{
-  color: lightgreen;
-  background-color: lightslategray;
+a {
+    text-decoration: none;
+    color: #507299;
 }
 
-
-.main-item p{
-  font-size: 15px;
-  margin-bottom:0;
-  padding:0px;
-
+p {
+    background-color: #edeef0;
 }
 
-.main-header{
-  padding-bottom: 1vh;
-  margin:0;
-  border-bottom: 3px solid gainsboro;
-}
-.space-between{
-  margin-top:2vh;
-  padding: 1vh;
-  display: flex;
-  justify-content: space-between;
-  border-top: 3px solid gainsboro;
+.block {
+    background-color: white;
+    border: 10px;
+    border-radius: 10px;
+    margin: 0px 10px 15px 10px;
+    padding: 10px;
 }
 
-.space-between a{
-  text-decoration: none;
-  color: steelblue;
-  padding: 0.5vh 1vh;
-  transition: 0.5s;
+.aside {
+    width: 170px;
+    text-align: left;
+    margin-left: 1100px;
+    position: fixed;
+    margin-top: 10px;
 }
 
-.space-between a:hover{
-  background-color: gainsboro;
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    background-color: #edeef0;
+    justify-content: center;
+    text-align: justify;
+    margin-left: -150px;
+    margin-top: 40px;
 }
 
-
-.cat{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  
+.flex-container1 {
+    padding: 10px;
+    max-width: 390px;
 }
 
-.container{
-
-  display:block;
-
+.sidebar {
+    color: #507299;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 3px solid #d0d0d0;
 }
 
-.item{
-  background-color: white;
-  border-radius: 7px;
-  padding: 1vh;
-  margin:1vh;
-  width: 10vw;
-  heigth:10vh;
-
-}
-footer{
-  margin: 0;
-  padding: 0.2vh;
-  grid-area:Footer;
-  text-align: center;
-  color: gainsboro;
-  background-color: white;
+nav {
+    max-width: 180px;
 }
 
-
-.logo{
-  background-color: rgb(17, 70, 148);
-}
-.logo img{
-  margin-left: 20vw;
-  margin-top: 0.3vw;
-  padding:0.3vw;
+#comment {
+    float: right;
 }
 
+footer {
+    text-align: center;
+    color: #d0d0d0;
+    line-height: 30px;
+}
+
+#zagh3 {
+    margin-block-end: 0.1em;
+    margin-block-start: 0.1em;
+    position: relative;
+    border-bottom: 3px solid #d0d0d0;
+    padding-left: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    z-index: 1;
+}
+
+@media (max-width: 1095px) {
+    .aside {
+        display: none;
+    }
+    button {
+        display: none;
+    }
+}
+
+@media (max-width: 780px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+    nav {
+        margin-top: 40px;
+        padding-left: 30px;
+        min-width: 400px;
+    }
+    ul {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    li {
+        padding-left: 20px;
+    }
+}
+
+li:hover {
+    background-color: #e1e5eb;
+}
+
+.block::selection {
+    color: green;
+}
+
+button {
+    float: right;
+    margin-top: 15px;
+}
+
+form {
+    display: inline;
+}
